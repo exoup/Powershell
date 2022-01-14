@@ -60,7 +60,7 @@ Set user DonaldDuck's manager as CN=Courage The. CowardlyDog,OU=Test,DC=Domain,D
 .NOTES
 Author: Joseph Y
 Website: https://github.com/exoup
-Version: 1.0
+Version: 1.01
 TODO: Refactor/Comment. It can be a bit verbose. Maybe fix that.
 #>
     [CmdletBinding()]
@@ -172,7 +172,6 @@ process {
             } until ($Answer.ToLower() -eq "y" -or $Answer.ToLower() -eq "n")
             } else {
             Write-Host "Manager info for $($To) not found."
-            break
         }
         }
     }
